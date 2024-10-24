@@ -175,7 +175,7 @@
    
 <div id=”chart_div”></div>
 <script type=”text/javascript”>
-   google.charts.load(‘current’, { ‘packages’: [‘corechart’] });
+   google.charts.load(‘current’, {‘packages’: [‘corechart’] });
    google.charts.setOnLoadCallback(drawChart);
 
    function drawChart() {
@@ -187,13 +187,11 @@
          [‘Study’, 4],
          [‘Exercise’, 2]
       ]);
-      
       var options = {
-         title: ‘My Daily Activities’
+         title:‘My Daily Activities’
       };
-      
       var chart = new google.visualization.PieChart(document.getElementById(‘chart_div’));
-      chart.draw(data, options);
+      chart.draw(data,options);
    }
 </script>
 
