@@ -5,7 +5,7 @@
 
     <img src = "WebBanner2023.png" alt= "banner" width="900" height="300">
     <h1><b>ENG0018 Computer Laboratory 2023/24</b></h1>
-    <h2>student URN:6882356</h2>
+    <h2>student URN:6901654</h2>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -13,103 +13,91 @@
 
 
         /* General Reset */
-        body, h1, h2, h3, p, ul, li, a {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Roboto', sans-serif;
-            line-height: 1.8;
-            background-color: #f5f7fa;
-            color: #333;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Lora', serif; /* Changed to a professional serif font */
+    line-height: 1.8;
+    background-color: #f5f7fa;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 
-        /* Header */
-        header {
-            background: linear-gradient(135deg, #0044cc, #0066ff);
-            color: white;
-            padding: 1rem 0;
-            text-align: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        header h1 {
-            font-size: 2.5rem;
-        }
+/* Header */
+header {
+    background: linear-gradient(135deg, #0044cc, #0066ff);
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+header h1 { font-size: 2.5rem; }
+/* Sidebar */
+.container {
+    display: flex;
+    flex-grow: 1;
+}
+.sidebar {
+    position: sticky;
+    top: 80px;
+    background: #ffffff;
+    width: 250px; /* Increased width */
+    padding: 1.5rem;
+    height: fit-content;
+    border-right: 2px solid #ddd;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; /* Added rounded corners */
+    transition: all 0.3s ease-in-out;
+}
+.sidebar h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #0044cc;
+}
+.sidebar a {
+    text-decoration: none;
+    padding: 0.8rem 1.2rem; /* Increased padding */
+    margin-bottom: 0.5rem;
+    color: #0044cc;
+    font-weight: bold;
+    border-radius: 8px; /* Rounded corners on links */
+    transition: background 0.3s, color 0.3s;
+}
+.sidebar a:hover {
+    background: #0044cc;
+    color: white;
+    transform: translateX(5px); /* Subtle movement on hover */
+}
 
-        /* Sidebar */
-        .container {
-            display: flex;
-            flex-wrap: nowrap;
-            width: 100%;
-            flex-grow: 1;
-        }
-        .sidebar {
-            position: sticky;
-            top: 80px;
-            background-color: #ffffff;
-            width: 220px;
-            padding: 1.5rem;
-            height: fit-content;
-            border-right: 2px solid #ddd;
-            box-shadow: 2px 0 8px rgba(0, 0, 0, 0.05);
-        }
-        .sidebar h3 {
-            font-size: 1.2rem;
-            margin-bottom: 1rem;
-            color: #0044cc;
-        }
-        .sidebar a {
-            text-decoration: none;
-            display: block;
-            padding: 0.8rem 1rem;
-            margin-bottom: 0.5rem;
-            color: #0044cc;
-            font-weight: bold;
-            border-radius: 5px;
-            transition: background-color 0.3s, color 0.3s;
-        }
-        .sidebar a:hover {
-            background-color: #0044cc;
-            color: white;
-        }
+/* Main Content */
+main {
+    flex: 1;
+    padding: 2rem;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    margin: 1rem 2rem;
+}
+h1, h2 { margin-bottom: 1rem; }
+p { margin-bottom: 1.5rem; font-size: 1rem; }
 
-        /* Main Content */
-        main {
-            flex: 1;
-            padding: 2rem;
-            background-color: #fff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-            border-radius: 8px;
-            margin: 1rem 2rem;
-        }
-        h1, h2 {
-            margin-bottom: 1rem;
-        }
-        p {
-            margin-bottom: 1.5rem;
-            font-size: 1rem;
-        }
+/* Footer */
+footer {
+    background: linear-gradient(135deg, #0044cc, #002a80);
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: auto;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+footer p { font-size: 1rem; }
 
-        /* Footer */
-        footer {
-            background: linear-gradient(135deg, #0044cc, #002a80);
-            color: white;
-            text-align: center;
-            padding: 1rem 0;
-            margin-top: auto;
-            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
-        }
-        footer p {
-            font-size: 1rem;
-            margin: 0;
-        }
 
        
 </style>
@@ -132,8 +120,8 @@
         <nav class="sidebar">
          
             <a href="#section1">Abstract</a>
-            <a href="#section2">High Intensity</a>
-            <a href="#section3">Low Intensity</a>
+            <a href="#section2">Circles to Nature</a>
+            <a href="#section3">Circles to Cosmos</a>
             <a href="#section4">Conclusion</a>
             <a href="#section5">References</a>
            
@@ -167,7 +155,7 @@
             </section>
    
             <section id="section2">
-            <h2>High Circles to Nature:</h2>
+            <h2>Circles to Nature:</h2>
                
             <p>
                 Why this subject is so interesting is perfectly described by that ‘our physical world doesn't only 
