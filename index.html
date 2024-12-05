@@ -136,7 +136,7 @@
        
         <main>
        
-            <S id="S1">
+            <section id="section1">
                
            
            
@@ -157,7 +157,7 @@
    <p align=center ><video src="ENG0018 Voice.mp4" width= "750" height = "425" controls> </video></p>
             </section>
    
-            <S id="S2">
+            <section id="section2">
             <h2>Circles to Nature:</h2>
                
             <p>
@@ -175,7 +175,7 @@
 
 
 
-        <S id="S3">
+        <section id="section3">
         <h2>Circles to cosmos</h2>
 
              <p>
@@ -243,7 +243,7 @@
     
 
 
-            <S id="S4">
+            <section id="section4">
                 <h2>Conclusion</h2>
                 <p> 
                  While Pi is a human ‘invention,’ its standout place in all aspects of life,
@@ -258,7 +258,7 @@
            
      
 
-                <S id="S5">
+                <section id="section5">
                 <h2>References</h2>
    
                 <p id="1">
@@ -397,9 +397,9 @@ Our mathematical universe : my quest for the ultimate nature of reality. New Yor
 <hr>
 <script>
   // Function to calculate and display word count for a specified section
-  function displayWordCount(S Id, outputId) {
+  function displayWordCount(sectionId, outputId) {
     // Get the text content from the specified section
-    const text = document.getElementById(S Id).textContent;
+    const text = document.getElementById(sectionId).textContent;
     // Split text into words based on spaces and filter out any empty strings
     const wordArray = text.trim().split(/\s+/);
     // Count the words
@@ -410,12 +410,12 @@ Our mathematical universe : my quest for the ultimate nature of reality. New Yor
   // Function to calculate and display total word count from selected sections
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
-    const S2count = displayWordCount("S2");
-    const S3count = displayWordCount("S3");
-    const S4count = displayWordCount("S4");
+    const section2count = displayWordCount("section2");
+    const section3count = displayWordCount("section3");
+    const section4count = displayWordCount("section4");
 
     // Calculate the sum of all selected sections
-    const totalWordCount = S2count + S3count + S4count;
+    const totalWordCount = section2count + section3count + section4count;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
