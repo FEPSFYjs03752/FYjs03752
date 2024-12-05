@@ -350,8 +350,8 @@ Our mathematical universe : my quest for the ultimate nature of reality. New Yor
 </button>
 <script>
     async function getLastUpdatedTime() {
-        const username = 'FEPSFY6882356';
-        const repo = 'FY6882356';
+        const username = 'FEPSFY6901654';
+        const repo = 'FY6901654';
        
         const url = `https://api.github.com/repos/${username}/${repo}/commits`;
         try {
@@ -410,13 +410,12 @@ Our mathematical universe : my quest for the ultimate nature of reality. New Yor
   // Function to calculate and display total word count from selected sections
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
-    const section2count = displayWordCount("section2");
-    const section3count = displayWordCount("section3");
-    const section4count = displayWordCount("section4");
-    const section5count = displayWordCount("section5");
+    const S2count = displayWordCount("S2");
+    const S3count = displayWordCount("S3");
+    const S4count = displayWordCount("S4");
 
     // Calculate the sum of all selected sections
-    const totalWordCount = section2count + section3count + section4count + section5count;
+    const totalWordCount = S2count + S3count + S4count;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
